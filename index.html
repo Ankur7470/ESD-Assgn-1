@@ -14,6 +14,37 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .hero {
+          /* background: url("your-image.jpg") no-repeat center center; */
+          background-size: cover;
+          min-height: 100vh;
+          width: 100%;
+          position: relative;
+          z-index: 1;
+        }
+        .hero-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 2;
+        }
+        .hero-content {
+          position: relative;
+          z-index: 3; 
+        }
+        .navbar {
+          background: transparent; 
+          z-index: 4; 
+        }
+      </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
@@ -53,6 +84,24 @@
         </div>
       </div>
     </nav>
+    <section class="hero d-flex align-items-center justify-content-center">
+      <div class="hero-overlay"></div>
+      <div
+        class="container d-flex align-items-center justify-content-start vh-100"
+      >
+        <div class="text-white w-50 hero-content text-center">
+          <h1 class="display-4 fw-bold fs-1">It's not just it's an Experience!</h1>
+          <p class="mb-4 fs-7">
+            The best delicious food that meet your needs, order now
+          </p>
+          <div>
+            <button type="button" class="btn btn-danger rounded-pill fw-bold">
+              Order Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
