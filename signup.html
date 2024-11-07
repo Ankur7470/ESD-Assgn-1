@@ -12,22 +12,24 @@
     />
   </head>
   <body>
-    <form>
-        <h4>Sign up</h4>
-        <div>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <form class="p-4 shadow-lg rounded" style="min-width: 30vw;">
+        <h4 class="mb-4">Sign up</h4>
+        <div class="mb-3">
             <input type="text" class="form-control" name="name" id="name" placeholder="Full Name">
         </div>
-        <div>
+        <div class="mb-3">
             <input type="email" class="form-control" name="email" id="email" placeholder="Email">
         </div>
-        <div>
+        <div  class="mb-3">
             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
         </div>
-        <div>
+        <div  class="mb-3">
             <input type="password" class="form-control" name="confPass" id="confPass" placeholder="Confirm Password">
         </div>
-        <button type="submit">Create Account</button>
-        <p>Already have an Account? <a> Log in</a></p>
+        <button type="submit" class="btn btn-primary w-100 mb-2 fw-semibold">Create Account</button>
+        <p>Already have an Account? <a class="text-danger fw-semibold text-decoration-none"> Log in</a></p>
     </form>
+    </div>
   </body>
 </html>
